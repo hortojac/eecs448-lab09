@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel = "stylesheet" href = "style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halo Toy Web Shop</title>
+    <h1>Welcome to the Halo Toy Web Shop</h1>
+</head>
+
+<h2>MasterChief</h2>
+<img src="MasterChief.jpeg" alt="MasterChief" width="230" height="230">
+
+<h2>Jun-A266</h2>
+<img src="Jun-A266.jpeg" alt="Jun-A266" width="230" height="230">
+
+<h2>Spartan Mark V</h2>
+<img src="Spartan-MKV.jpeg" alt="Spartan Mark V" width="230" height="230">
+
+<form action="customerBackend.php" method="post">
+  <br><br><label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8" required><br><br><br>
+
+<input type="radio" id="MasterChief" name="MasterChief" value="Masterchief" required>
+<label for="MasterChief">MasterChief ($30)</label><br>
+Quantity: 
+<input type="text" name="Item1" id="Item1"><br><br>
+
+<input type="radio" id="Jun-A266" name="Jun-A266" value="Jun-A266" required>
+<label for="Jun-A266">Jun-A266 ($20)</label><br>
+Quantity: 
+<input type="text" name="Item2" id="Item2"><br><br>
+
+<input type="radio" id="Spartan Mark V" name="Spartan Mark V" value="Spartan Mark V" required>
+<label for="Spartan Mark V">Spartan Mark V ($10)</label><br>
+Quantity: 
+<input type="text" name="Item3" id="Item3" ><br><br>
+
+Choose your shipping: <br>
+<input type="radio" id="7-Day" name="Shipping" value="7-Day" required>
+  <label for="7-Day">Free 7 Day</label><br>
+<input type="radio" id="Overnight" name="Shipping" value="Overnight">
+  <label for="Overnight">$50.00 Overnight</label><br>
+<input type="radio" id="3-Day" name="Shipping" value="3-Day">
+  <label for="3-Day">$5.00 3-Day</label><br><br>
+
+<input type="reset" value="Reset">
+<input type="submit" onclick = "validate(email)"/> 
+
+<script src="formCheckerjs"></script>
+</form>
+</body>
+</html>
